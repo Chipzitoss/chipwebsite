@@ -1,0 +1,64 @@
+🔘 ONDE CRIAR / EDITAR BOTÕES
+
+No teu index.html, procura essa parte aqui:
+
+<div class="buttons">
+  <a href="#" class="btn">ChipCloud</a>
+  <a href="#" class="btn secondary">Outro botão →</a>
+</div>
+
+👉 Mudar o link
+
+Troca o href="#" pelo link real:
+
+<a href="https://sla.trycloudflare.com/SEU_TUNNEL" class="btn">
+  ChipCloud
+</a>
+
+👉 Criar novo botão
+
+Só duplica a linha:
+
+<a href="https://meulink2.com" class="btn">
+  Painel do Server
+</a>
+
+
+Pode botar quantos quiser, um embaixo do outro.
+Sem limite, sem drama 😎
+
+🖼️ ONDE TROCAR A FOTO DE FUNDO
+
+Ainda no mesmo arquivo, lá em cima no <style>:
+
+Procura isso:
+
+body {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+  background-size: cover;
+  background-position: center;
+}
+
+👉 Trocar a imagem
+
+É só trocar o link da imagem:
+
+background-image: url("LINK_DA_SUA_IMAGEM_AQUI");
+
+👉 Usar imagem do próprio GitHub (recomendado)
+
+Cria uma pasta chamada img
+
+Sobe uma imagem tipo fundo.jpg
+
+Fica assim:
+
+index.html
+img/
+ └ fundo.jpg
+
+
+E no CSS:
+
+background-image: url("img/fundo.jpg");
